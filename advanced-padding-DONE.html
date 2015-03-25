@@ -1,0 +1,86 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced: Grid Padding</title>
+    <link rel="stylesheet" href="foundation-5.5.1/css/foundation.css" />
+    <script src="foundation-5.5.1/js/vendor/modernizr.js"></script>
+    <style>
+      
+      .container{
+
+      }
+      .board{
+        border: 1px dotted black;
+      }
+      .green{
+        background-color: green;
+      }
+      .red{
+        background-color: red;
+      }
+      .orange{
+        background-color: orange;
+      }
+      .greenyellow{
+        background-color: greenyellow;
+      }
+      .purple{
+        background-color: blueviolet;
+      }
+      .lightblue{
+        background-color: skyblue;
+      }
+
+    </style>
+  </head>
+  <body>
+    
+   
+    <div class="container ">
+    <ul class="row no-bullet">
+     
+      <li class="step1 columns small-2">
+        <div class="row orange"> 
+          <b> 01. <br>Feedback Bucket</b>
+        </div>
+        <div class="row red "> 
+          <span class=""> Bug Tracking</span>
+        </div>
+      </li>
+      <!-- What are the margins for .step2 .row? ISSUE-->
+      <!-- ANSWER negative -.9375em to cancel out padding for columns under row. -->
+      <li class="step2 green columns small-6">
+      <!-- What you need to do to make text indented like the rest? ISSUE-->
+      <!-- Either add collpase to .boards OR add columns small-12 to feedback bucket -->
+        <div class="row greenyellow"> 
+          <b> 02.<br> Feedback Bucket</b>
+        </div>
+        <ul class="row boards no-bullet">
+          <li class="board greenyellow columns small-2"> <span class="bold"> Sort It Out </span> </li>
+          <li class="board greenyellow columns small-2"> <span class="bold"> Research</span> </li>
+          <li class="board greenyellow columns small-2"> <span class="bold"> Must Have</span> </li>
+          <li class="board greenyellow columns small-2"> <span class="bold"> Should Have</span> </li>
+          <li class="board greenyellow columns small-2"> <span class="bold"> Could have</span> </li>
+          <li class="board greenyellow columns small-2"> <span class="bold"> Waiting to Die!!!!</span> </li>
+        </ul>
+      </li>
+      <li class="step3 lightblue columns small-2">
+        <b> 03.<br> Sprint Log</b>
+      </li>
+      <li class="step4 purple columns small-2">
+        <b> 04. <br>Current PURPLE Sprint</b>
+      </li>
+      
+      </ul>
+
+    </div>
+    
+    <script src="foundation-5.5.1/js/vendor/jquery.js"></script>
+    <script src="foundation-5.5.1/js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>

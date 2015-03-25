@@ -1,0 +1,86 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nested Rows</title>
+    <link rel="stylesheet" href="foundation-5.5.1/css/foundation.css" />
+    <script src="foundation-5.5.1/js/vendor/modernizr.js"></script>
+    <style>
+      
+
+      .container{
+
+      }
+      .board{
+        border: 1px dotted black;
+      }
+      .green{
+        background-color: green;
+      }
+      .red{
+        background-color: red;
+      }
+      .orange{
+        background-color: orange;
+      }
+      .greenyellow{
+        background-color: greenyellow;
+      }
+      .purple{
+        background-color: blueviolet;
+      }
+      .lightblue{
+        background-color: skyblue;
+      }
+
+    </style>
+  </head>
+  <body>
+    
+    <!-- What goes here? -->
+   
+    <ul class="no-bullet">
+      <!-- What goes here?  -->
+      <li class="step1 ">
+        <div class=" orange"> 
+          <b> 01. <br>Feedback Bucket</b>
+        </div>
+        <div class="red "> 
+          <b> Bug Tracking</b>
+        </div>
+      </li>
+
+
+      <li class="step2 green ">
+        <div class="greenyellow"> <b> 02.<br> Sorting Hat</b></div>
+        <ul class="no-bullet boards">
+          <li class="board greenyellow "> <b> Sort It Out </b> </li>
+          <li class="board greenyellow "> <b> Research</b> </li>
+          <li class="board greenyellow "> <b> Must Have</b> </li>
+          <li class="board greenyellow "> <b> Should Have</b> </li>
+          <li class="board greenyellow "> <b> Could have</b> </li>
+          <li class="board greenyellow "> <b> Waiting to Die!!!!</b> </li>
+        </ul>
+      </li>
+
+
+      <li class="step3 lightblue ">
+        <b> 03.<br> Sprint Log</b>
+      </li>
+
+
+      <li class="step4 purple ">
+        <b> 04. <br>Current PURPLE Sprint</b>
+      </li>
+      
+      </ul>
+
+    
+    <script src="foundation-5.5.1/js/vendor/jquery.js"></script>
+    <script src="foundation-5.5.1/js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>

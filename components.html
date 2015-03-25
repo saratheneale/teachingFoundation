@@ -1,0 +1,194 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Components and Utilities</title>
+    <link rel="stylesheet" href="foundation-5.5.1/css/foundation.css" />
+    <script src="foundation-5.5.1/js/vendor/modernizr.js"></script>
+
+    <style>
+      
+
+      .container{
+
+      }
+      .board{
+        border: 1px dotted black;
+      }
+      .green{
+        background-color: green;
+      }
+      .red{
+        background-color: red;
+      }
+      .orange{
+        background-color: orange;
+      }
+      .greenyellow{
+        background-color: greenyellow;
+      }
+      .purple{
+        background-color: blueviolet;
+      }
+      .lightblue{
+        background-color: skyblue;
+      }
+
+    </style>
+  </head>
+  <body>
+    
+    <div class="row">
+      <div class="large-12 columns">
+        <h1>Components and Utilites</h1>
+      </div>
+    </div>
+    <!-- How can you customize the dropdown? -->
+    <!-- Make the menu 100% width -->
+    <!-- Make the align right -->
+    <div class="row">
+      <div class="large-12 columns">
+        <a href="#" 
+           class="button" 
+           data-dropdown="drop"> TLV Team &raquo;</a>
+
+        <ul id="drop" class="f-dropdown" data-dropdown-content>
+          <li><a href="#">Yona</a></li>
+          <li><a href="#">Inon</a></li>
+          <li><a href="#">Dikla</a></li>
+          <li><a href="#">Dror</a></li>
+          <li><a href="#">Lior</a></li>
+          <li><a href="#">Einav</a></li>
+          <li><a href="#">Udi</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    
+
+    <div class="row">
+      <div class="large-9 medium-9 columns">
+       
+        
+
+        <div class="row">
+          <div class="large-12 columns">
+            <div class="callout panel">
+             <!-- Touch devices -->
+              <p class="panel">
+                <strong class="show-for-touch">You are on a touch-enabled device.</strong>
+                <strong class="hide-for-touch">You are not on a touch-enabled device.</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="medium-4 columns">
+            <div class="callout panel">
+              <!-- Landscape Mode  -->
+              <p class="panel">
+                <strong class="show-for-landscape">You are in landscape orientation.</strong>
+                <strong class="show-for-portrait">You are in portrait orientation.</strong>
+              </p>
+            </div>
+          </div>
+          
+          <div class=" medium-8 columns">
+          <!-- Accordian and Text by Size-->
+            <ul class="accordion" data-accordion>
+              <li class="accordion-navigation">
+                <a href="#panel1a">Text By Screen Size Example</a>
+                <div id="panel1a" class="content ">
+                  <div class="callout panel">
+                
+
+                <p class="panel">
+                  <strong class="visible-for-small-only  red ">This text is shown only on a small screen.</strong>
+                  <strong class="visible-for-medium-up   orange ">This text is shown on medium screens and up.</strong>
+                  <strong class="visible-for-medium-only green">This text is shown only on a medium screen.</strong>
+                  <strong class="visible-for-large-up    greenyellow ">This text is shown on large screens and up.</strong>
+                  <strong class="visible-for-large-only  lightblue ">This text is shown only on a large screen.</strong>
+                  <strong class="visible-for-xlarge-up   purple ">This text is shown on xlarge screens and up.</strong>
+                  <strong class="visible-for-xlarge-only red">This text is shown only on an xlarge screen.</strong>
+                  <strong class="visible-for-xxlarge-up  orange">This text is shown on xxlarge screens and up.</strong>
+                </p>
+              </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class=" small-10 columns small-centered">
+            <!-- Float Right, Left. Make sure its in a clearfix so your flow isn't too disrupted -->
+            Float Right, Left. These columns are also centered
+            <div class="panel clearfix">
+                <a class="button small right">Angular Float Right</a>
+                <a class="button small left">Backbone Float Left</a>
+            </div>
+          </div>
+         
+         
+        </div>
+
+        <!-- text-align for certain sizes -->
+        <div class="row">
+          <div class=" small-10 columns small-centered">
+
+          <p class="small-only-text-right medium-text-center large-text-justify xlarge-text-left">
+            This text is 
+            <span class="orange    show-for-large-only">justified</span> 
+            <span class="red       show-for-medium-only">centered</span> 
+            <span class="green     show-for-small-only">right-aligned</span> 
+            <span class="lightblue show-for-xlarge-up">left-aligned</span>.Set in the year 0 F.E. ("Foundation Era"), The Psychohistorians opens on Trantor, the capital of the 12,000-year-old Galactic Empire. Though the empire appears stable and powerful, it is slowly decaying in ways that parallel the decline of the Western Roman Empire.
+
+          </p>
+          </div>
+           <div class=" small-4 columns ">
+          </div>
+        </div>
+        
+        <hr />
+                
+        
+      </div>     
+
+      <!-- Hide on small devices  -->
+      <div class="large-3 medium-3 columns hide-for-small">
+
+       <ul class="accordion" data-accordion>
+              <li class="accordion-navigation">
+                <a href="#panel1b"> <h5>Core Values as Buttons!! </h5></a>
+                <div id="panel1b" class="content ">
+                 
+                  <a href="#" class="small button">We are Fearless</a><br/>
+                  <a href="#" class="small radius button">People Come First</a><br/>
+                  <a href="#" class="small round button">We are Family</a><br/>            
+                  <a href="#" class="medium success button">We go the Extra Mile</a><br/>
+                  <a href="#" class="medium alert button">We LOVE what we do</a><br/>
+                </div> 
+              </li> 
+              <li class="accordion-navigation">     
+                  <div class="panel">
+                      
+                    <a href="#panel1c"><h5>A whole kitchen sink of goodies</h5></a>
+                    <div id="panel1c" class="content ">
+                      <p> comes with Foundation. Checkout the docs to see them all, along with details on making them your own.</p>
+                      <a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>    
+                    </div>
+                  </div>
+              </li>  
+          </ul>    
+        </div>
+      </div>
+    </div>
+    
+    <script src="foundation-5.5.1/js/vendor/jquery.js"></script>
+    <script src="foundation-5.5.1/js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
